@@ -11,6 +11,46 @@ import com.sist.web.vo.*;
 
 import lombok.RequiredArgsConstructor;
 
+/*
+ * 	git pull origin main
+ * 	git checkout -b develop
+ * 	git add .
+ * 	git commit -m ""
+ * 	git push origin develop
+ * 	-------------------------
+ * 	git pull origin develop
+ * 	git checkout -b feature/login
+ * 	git add .
+ * 	git commit -m ""
+ * 	git push origin feature/login
+ * 	
+ * 	main : 배포용
+ * 	 |
+ * 	develop : 개발 통합
+ * 	 |
+ * 	feature/login : 기능 개발
+ * 	 |
+ * 	개발
+ * 	 |
+ * 	commit
+ * 	 |
+ * 	push
+ * 	 |
+ * 	Pull Request
+ * 	 |
+ * 	develop
+ * 	 => git status
+ * 
+ * 	gh pr create --base develop --head feature/login
+ * 
+ * 	gh pr create --base develop --head feature/login
+ * 		--title "로그인 기능 구현" --body "스프링 시큐리티 이용"
+ * 
+ * 	gh pr merge
+ * 
+ * 
+ */
+
 @Controller
 @RequiredArgsConstructor
 public class MemberController {
